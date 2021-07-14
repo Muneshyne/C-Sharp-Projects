@@ -1,0 +1,7 @@
+C:\Users\8 7\Desktop\Basic_C#_Programs\PkgExpress\PkgExpress\bin\Debug\PkgExpress.exe.config
+C:\Users\8 7\Desktop\Basic_C#_Programs\PkgExpress\PkgExpress\bin\Debug\PkgExpress.exe
+C:\Users\8 7\Desktop\Basic_C#_Programs\PkgExpress\PkgExpress\bin\Debug\PkgExpress.pdb
+C:\Users\8 7\Desktop\Basic_C#_Programs\PkgExpress\PkgExpress\obj\Debug\PkgExpress.csproj.CoreCompileInputs.cache
+C:\Users\8 7\Desktop\Basic_C#_Programs\PkgExpress\PkgExpress\obj\Debug\PkgExpress.exe
+C:\Users\8 7\Desktop\Basic_C#_Programs\PkgExpress\PkgExpress\obj\Debug\PkgExpress.pdb
+C:\Users\8 7\Desktop\Basic_C#_Programs\PkgExpress\PkgExpress\obj\Debug\PkgExpress.csproj.AssemblyReference.cache
