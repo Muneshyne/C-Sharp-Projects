@@ -79,7 +79,7 @@ namespace PkgExpress
             int dimension = pkgWidth * pkgHeight * pkgLength;
             int dimWeight = dimension * pkgWeight;
             int shipCost = dimWeight / 100;
-            Console.WriteLine(Convert.ToString("Your estimated total for shiping this package is: " + "$" + shipCost));
+            Console.WriteLine(Convert.ToString("Your estimated total for shiping this package is: " + "$" + shipCost + ".00"));
             Console.ReadLine();
         }
     }
