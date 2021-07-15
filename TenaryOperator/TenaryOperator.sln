@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TenaryOperator", "TenaryOperator\TenaryOperator.csproj", "{2D89BE26-CFC3-4ED0-BA86-E50B1179E41E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D89BE26-CFC3-4ED0-BA86-E50B1179E41E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D89BE26-CFC3-4ED0-BA86-E50B1179E41E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D89BE26-CFC3-4ED0-BA86-E50B1179E41E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D89BE26-CFC3-4ED0-BA86-E50B1179E41E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55FB6942-F8D7-4A4F-802D-FCA545D0B757}
+	EndGlobalSection
+EndGlobal
