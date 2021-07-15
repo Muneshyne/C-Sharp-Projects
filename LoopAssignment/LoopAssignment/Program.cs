@@ -23,9 +23,9 @@ namespace LoopAssignment
             {
 
                 input2 = Console.ReadLine();
-                Console.WriteLine("Input is {0}.", input2);
+                Console.WriteLine("Input is {0}.", input2); // blank input
 
-            } while (!input2.Equals(string.Empty));
+            } while (!input2.Equals(string.Empty)); // logs input you enter
         }
     }
 }
