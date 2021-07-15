@@ -11,7 +11,7 @@ namespace LoopAssignment
         static void Main(string[] args)
         {
             //string input = Console.ReadLine();
-
+            //bool stress = false;
             //while (!input.Equals(string.Empty))
             //{
             //    Console.WriteLine("Input is {0}.", input);
@@ -19,13 +19,14 @@ namespace LoopAssignment
             //}
 
             string input2 = string.Empty;
+            bool stress = false; //empty input
             do
             {
 
-                input2 = Console.ReadLine();
-                Console.WriteLine("Input is {0}.", input2); // blank input
+                input2 = Console.ReadLine();    
+                Console.WriteLine("Input is {0}.", input2); // blank input or returned input
 
-            } while (!input2.Equals(string.Empty)); // logs input you enter
+            } while (!stress); // logs input you enter
         }
     }
 }
