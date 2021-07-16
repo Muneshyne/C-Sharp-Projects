@@ -10,7 +10,7 @@ class Program
     {
         // -------- part 1 --------
         // A one-dimensional array of strings.
-        string[] stringArray = { "This ", "is ", "my ", "6 part ", "C# assignment " };
+        string[] stringArray = { "This ", "is ", "my ", "6 part ", "C# assignment. " };
         // Ask the user to input some text
         Console.WriteLine("Input text here: ");
         string text = Convert.ToString(Console.ReadLine());
@@ -44,6 +44,8 @@ class Program
         }
         Console.ReadLine();
 
+
+        // -------- part 3 --------
         // used to determine whether to continue iterating the loop is a “<”
         int number = 0;
         while (number < 7)
@@ -54,10 +56,10 @@ class Program
         Console.ReadLine();
 
 
-        // -------- part 3 --------
+        
         // used to determine whether to continue iterating the loop is a “<”
         number = 0;
-        while (number <= 7)
+        while (number <= 9)
         {
             Console.WriteLine(number);
             number++;
