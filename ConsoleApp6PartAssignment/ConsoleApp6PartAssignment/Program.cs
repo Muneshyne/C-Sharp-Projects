@@ -10,7 +10,7 @@ class Program
     {
         // -------- part 1 --------
         // A one-dimensional array of strings.
-        string[] stringArray = { "firstStr ", "secondStr ", "thirdStr ", "fourthStr ", "fifthStr " };
+        string[] stringArray = { "This ", "is ", "my ", "6 part ", "C# assignment " };
         // Ask the user to input some text
         Console.WriteLine("Input text here: ");
         string text = Convert.ToString(Console.ReadLine());
