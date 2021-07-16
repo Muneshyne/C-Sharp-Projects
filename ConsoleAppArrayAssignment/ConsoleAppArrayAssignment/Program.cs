@@ -14,7 +14,7 @@ class Program
         Console.WriteLine("Enter a string index from 0 to 4");
         int index = Convert.ToInt32(Console.ReadLine());
         //Add in a message that displays when the user selects an index that doesn’t exist.
-        string result = (index > 4) ? "Index does not exist. " : stringArray[index];
+        string result = (index <0 || index  > 4) ? "Index does not exist. " : stringArray[index];
         Console.WriteLine(result);
 
         // create a one dimensional Array of integers.
@@ -24,7 +24,7 @@ class Program
         Console.WriteLine("Enter an integar index from 0 to 4");
         index = Convert.ToInt32(Console.ReadLine());
 
-        result = (index > 4) ? "Index does not exist. " : Convert.ToString(intArray[index]);
+        result = (index < 0 || index > 4) ? "Index does not exist. " : Convert.ToString(intArray[index]);
         Console.WriteLine(result);
 
         // create a list of strings
@@ -38,7 +38,7 @@ class Program
         Console.WriteLine("Enter an new string index from 0 to 4");
         index = Convert.ToInt32(Console.ReadLine());
         //Add in a message that displays when the user selects an index that doesn’t exist.
-        result = (index > 4) ? "That index does not exist. " : strList[index];
+        result = (index < 0 || index > 4) ? "That index does not exist. " : strList[index];
         Console.WriteLine(result);
         Console.Read();
     }
