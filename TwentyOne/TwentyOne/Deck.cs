@@ -22,7 +22,7 @@ namespace TwentyOne
             //nested foreach loop
             foreach (string face in Faces)
             {
-                foreach (string suit in Suits)
+                foreach (string suit in Suits) //creates for cards of each suit and face
                 {
                     Card card = new Card();
                     card.Suit = suit;
