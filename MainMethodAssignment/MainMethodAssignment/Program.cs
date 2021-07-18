@@ -10,7 +10,7 @@ namespace MainMethodAssignment
     {
         static void Main(string[] args)
         {
-            // instantiate the class and call the one method, passing in an integer
+            // instantiate the class and call the one method, passing in an integer, display to screen.
             MathClass math = new MathClass();
             Console.WriteLine(math.Operation(60));
             Console.ReadLine();
@@ -26,6 +26,7 @@ namespace MainMethodAssignment
             string input = "256";
             Console.WriteLine(math2.Operation(input));
             Console.ReadLine();
+
         }
     }
 }

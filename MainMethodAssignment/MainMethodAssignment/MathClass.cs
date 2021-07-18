@@ -8,10 +8,10 @@ namespace MainMethodAssignment
 {
     class MathClass
     {
-          // create a method that will take an integer, perform a math operation, and the return as an integer. 
+        // create a method that will take an integer, perform a math operation, and the return as an integer. 
         public int Operation(int number)
         {
-            number *= 20;
+            number -= 20;
             return number;
         }
 
@@ -19,7 +19,7 @@ namespace MainMethodAssignment
         // operation for it, then return the answer as an integer.
         public int Operation(decimal number)
         {
-            int answer = (int)number / 15;
+            int answer = (int)number * 15;
             return answer;
         }
 
@@ -28,8 +28,11 @@ namespace MainMethodAssignment
         public int Operation(string input)
         {
             int number = Convert.ToInt32(input);
-            int answer = number * 500;
+            int answer = number / 32;
             return answer;
         }
+
+
+
     }
 }
