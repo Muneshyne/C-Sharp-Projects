@@ -11,20 +11,20 @@ namespace MainMethodAssignment
         static void Main(string[] args)
         {
             // instantiate the class and call the one method, passing in an integer, display to screen.
-            MathClass math = new MathClass();
-            Console.WriteLine(math.Operation(60));
+            MathClass maths = new MathClass();
+            Console.WriteLine(maths.Operation(60));
             Console.ReadLine();
 
             // instantiate the class and call the second method, passing in a decimal
-            MathClass math1 = new MathClass();
+            MathClass timesDec = new MathClass();
             decimal point = 143.75m;
-            Console.WriteLine(math1.Operation(point));
+            Console.WriteLine(timesDec.Operation(point));
             Console.ReadLine();
 
             // instantiate the class and call the third method, passing in a string that equates to an integer 
-            MathClass math2 = new MathClass();
+            MathClass quotient = new MathClass();
             string input = "256";
-            Console.WriteLine(math2.Operation(input));
+            Console.WriteLine(quotient.Operation(input));
             Console.ReadLine();
 
         }
