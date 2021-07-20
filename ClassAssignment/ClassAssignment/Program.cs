@@ -21,8 +21,8 @@ namespace ClassAssignment
 
 
             // run function with 'out' parameters, declare variables inline
-            aclass.intEquals(out int times3, out int times4, number);
-            Console.WriteLine("{0} X 5 = {1}\n{0} / 4 = {2}", number, times3, times4);
+            aclass.intEquals(out int multiply, out int dividend, number);
+            Console.WriteLine("{0} X 5 = {1}\n{0} / 4 = {2}", number, multiply, dividend);
             Console.Read();
         }
     }
