@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassAssignment
 {
-    class StaticClass
+    public static class StaticClass
     {
     }
 }

@@ -12,7 +12,7 @@ namespace TwentyOne
         public string Name { get; set; }
         public string Dealer { get; set; }
         // can type prop then tab x2 to set public property
-        public void ListPlaers()
+        public void ListPlayers()
         {
             foreach (string player in Players)
             {
