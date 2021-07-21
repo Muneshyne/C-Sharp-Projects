@@ -26,6 +26,14 @@ namespace TwentyOne
             }
             Console.WriteLine(deck.Cards.Count);
             Console.ReadLine();
+
+
+            //-------- Lambda Expressions --------
+            //int count = deck.Cards.Count(x => x.Face == Face.Ace 
+            //List<Card> newList = deck.Cards.Where(x => x.Face == Face.King).ToList
+            //List<int> numberList = new List<int>() { 1, 2, 3, 543, 234, 65 };
+            //int sum = numberList.Sum()
+            //Console.WriteLine(sum);
         }
     }
 }
