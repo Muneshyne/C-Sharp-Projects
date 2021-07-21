@@ -15,7 +15,7 @@ namespace OperatorsAssignment
         {
             return employee1.Id == employee2.Id;
         }
-        // requires matching operator "!=" to be defined as well. 
+        // error if not here to compare 
         public static bool operator !=(Employee employee1, Employee employee2)
         {
             return employee1.Id != employee2.Id;
