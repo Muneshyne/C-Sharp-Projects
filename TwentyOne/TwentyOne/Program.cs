@@ -16,7 +16,7 @@ namespace TwentyOne
             //player.Name = "Jeremy";
             //game += player; // easier way to enter game = game + player;
             //game -= player;
-            
+
             Deck deck = new Deck();
             deck.Shuffle(3);
 
