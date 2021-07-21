@@ -8,7 +8,7 @@ namespace TwentyOne
 {
     public abstract class Game //keep names generic ie not TwentyOneGame
     {
-        public List<string> Players { get; set; }
+        public List<Player> Players { get; set; }
         public string Name { get; set; }
         public string Dealer { get; set; }
         // can type prop then tab x2 to set public property
@@ -16,9 +16,9 @@ namespace TwentyOne
 
         public virtual void ListPlayers() // does have implementation
         {
-            foreach (string player in Players)
+            foreach (Player player in Players)
             {
-                Console.WriteLine(player);
+                Console.WriteLine(player.Name);
             }
         }
     }
