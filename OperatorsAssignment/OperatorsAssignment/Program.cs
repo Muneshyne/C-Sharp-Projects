@@ -14,7 +14,6 @@ namespace OperatorsAssignment
             Employee person1 = new Employee() { Id = 002 };
             Employee person2 = new Employee() { Id = 003 };
             Console.WriteLine(person1 == person2);
-            Console.WriteLine(person1 != person2);
             Console.ReadLine();
         }
     }
