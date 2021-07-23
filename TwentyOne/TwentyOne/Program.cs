@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO; //file class
+using Casino;
+using Casino.TwentyOne;
 
 namespace TwentyOne
 {
@@ -11,12 +13,9 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
-            //string text = "Here is some text."; // this will be added to log.txt
-            //File.WriteAllText(@"C:\Users\8 7\Desktop\TheTechAcademy-C-Sharp-Projects\Logs\log.txt", text);
-            //string text = File.ReadAllText(@"C:\Users\8 7\Desktop\TheTechAcademy-C-Sharp-Projects\Logs\log.txt");
-            
-
-            Console.WriteLine("Welcome to the Muneshyne Casino. Let's start by telling me your name.");
+            //Player newPlayer = new Player("Jeremy"); //reuse constructor or creating a constructor call chain
+            const string casinoName = "Luxury Muneshyne Casino";
+            Console.WriteLine("Welcome to the {0}. Let's start by telling me your name.", casinoName);
             string playerName = Console.ReadLine();
 
             Console.WriteLine("And how much money did you bring today?");
@@ -28,6 +27,11 @@ namespace TwentyOne
             if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya")
             {
                 Player player = new Player(playerName, bank);
+                player.Id = Guid.NewGuid();
+                using (StreamWriter file = new StreamWriter(@"C:\Users\8 7\Desktop\TheTechAcademy-C-Sharp-Projects\Logs\log.txt", true)) // true would append not create new file
+                {
+                    file.WriteLine(player.Id);
+                }
                 Game game = new TwentyOneGame();
                 game += player;
                 player.isActivelyPlaying = true;
