@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 using Casino;
@@ -68,23 +69,27 @@ namespace TwentyOne
 
         private static void UpdateDbWithException(Exception ex)
         {
-            string connectionString = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=TwentyOneGame;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            string connectionString = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=TwentyOneGame;
+                                        Integrated Security=True;Connect Timeout=30;Encrypt=False;
+                                        TrustServerCertificate=False;ApplicationIntent=ReadWrite;
+                                        MultiSubnetFailover=False";
+
             string queryString = @"INSERT INTO Table (ExceptionType, ExceptionMessage, TimeStamp) VALUES 
                                  (@ExceptionType, @ExceptionMessage, @TimeStamp)";
 
             using (SqlConnection connection = new SqlConnection(connectionString)) // this to free up memory after
             {
                 SqlCommand command = new SqlCommand(queryString, connection);
-                command.Parameters.Add("@ExceptionType", System.Data.SqlDbType.VarChar); //by naming data type protecting against sql injection
-                command.Parameters.Add("@ExcetionMessage", System.Data.SqlDbType.VarChar);
-                command.Parameters.Add("@TimeStamp", System.Data.SqlDbType.DateTime);
+                command.Parameters.Add("@ExceptionType", SqlDbType.VarChar); //by naming data type protecting against sql injection
+                command.Parameters.Add("@ExcetionMessage", SqlDbType.VarChar);
+                command.Parameters.Add("@TimeStamp", SqlDbType.DateTime);
 
                 command.Parameters["@ExceptionType"].Value = ex.GetType().ToString();
                 command.Parameters["@ExceptionMessage"].Value = ex.Message;
                 command.Parameters["@TimeStamp"].Value = DateTime.Now;
 
                 connection.Open();
-                command.ExecuteNonQuery();
+                command.ExecuteNonQuery(); //INSERT statment so nonquery
                 connection.Close();
             }
         }
