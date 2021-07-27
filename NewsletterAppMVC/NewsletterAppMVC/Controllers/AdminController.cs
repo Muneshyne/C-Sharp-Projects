@@ -15,8 +15,11 @@ namespace NewsletterAppMVC.Controllers
         {
             using (NewsletterEntities db = new NewsletterEntities())
             {
-                var signups = db.SignUps;
-                var signupVMs = new List<SignupVM>(); // to limit what is viewed (ssn)
+                //var signups = db.SignUps.Where(x => x.Removed == null).ToList(); //either lambda or through list
+                var signups = (from c in db.SignUps
+                               where c.Removed == null
+                               select c).ToList();
+                var signupVMs = new List<SignupVM>(); // to limit what is viewed (i.e. ssn)
                 foreach (var signup in signups)
                 {
                     var signupVm = new SignupVM();
@@ -29,6 +32,17 @@ namespace NewsletterAppMVC.Controllers
 
                 return View(signupVMs);
             }
+        }
+        
+        public ActionResult Unsubscribe(int Id)
+        {
+            using (NewsletterEntities db = new NewsletterEntities())
+            {
+                var signup = db.SignUps.Find(Id);
+                signup.Removed = DateTime.Now;
+                db.SaveChanges();
+            }
+            return RedirectToAction("Index");
         }
     }
 }
