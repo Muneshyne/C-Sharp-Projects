@@ -15,7 +15,8 @@ namespace FinalChallangeSubAssignment
                 var student = new Student()
                 {
                     StudentName = "Jar Jar Binx",
-                    EmailAddress = "jarjar1@gmail.com"
+                    EmailAddress = "jarjar1@gmail.com",
+                    DateOfBirth = DateTime.Now
                 };
 
                 db.Students.Add(student);
